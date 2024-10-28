@@ -1,0 +1,63 @@
+<!-- //promise객체니까 then으로 받아야겠죠
+fetch('https://jsonplaceholder.typicode.com/posts/').then(resp=>{
+    return resp.json()
+}).then(data=>{
+    console.log(data)
+})//
+//users에 대한 URL을쳤을 때 유저에대한 리스트가나오게
+아이디값(유저의) 을 유저뒤에서 /아이디값을 넣어주면 유저개인정보가
+ㅏ나오는데 그뒤 슬러시 포스트라고 넣어주면 유저가작서한게시글이나온다. 
+
+USER LIST에서 네임검색 네임검색해야 아이디를 ㅗㅂ을 수잇겟죠 아이디용해서
+포스트커멘트 투두 수집 이걸하나의 객체로 만들어서 출력 
+
+function하나 만들면 됩니다 
+
+baseUrl =  -->
+<!-- https://jsonplaceholder.typicode.com/users -->
+
+
+
+fetch = ( 'https://jsonplaceholder.typicode.com/ ' , {
+    method : 
+}
+fetch 에서 url에 접속하면 해당하는 정보가나온다는거알죠.
+username으로 검색해서, 찾을수있겟죠. 반복한번돌리면되잖아요
+찾는이유는 아이디를 찾기위해. 유저아이디가잇어야 해당하는곳에 url요청을
+보낼 수 있다. 
+요청보내서 응답가져오고 반복한번돌려서 아이디찾고
+아이디가 있으면 3개요청을 동시에 보낼수있겠죠
+그리고 객체 합치면 되잖아 . . . 
+
+
+
+<!-- user리스트: /users
+특정 user가 쓴 게시글 /users/<user_id>/posts
+특정 user가 쓴 댓글 /users/<user_id>/comments
+특정 user의 todo /users/<user_id>/todos
+--> 
+
+<!-- 
+1.function을 만들자
+
+위 API만 이용해서
+username을 입력받아, 
+
+- user의 정보
+- user가 쓴 게시글, 
+- user가 쓴 댓글
+- user의 todo
+를 모두 조회하는 함수를 작성
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
